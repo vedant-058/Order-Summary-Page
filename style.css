@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background: url("assets/pattern-background-desktop.svg");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(225, 100%, 94%);
+    overflow: hidden;
+}
+
+
+#card {
+    display: grid;
+    grid-template-columns: 330px;
+    grid-template-rows: 170px 140px 80px 150px;
+    grid-template-areas: "image" "text" "stats" "btnsec";
+    font-family: 'Red Hat Display', sans-serif;
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 0px 30px 20px hsl(225, 85%, 90%);
+    transition: display 0.5s ease;
+}
+
+
+
+#card-image {
+    grid-area: image;
+    background: url("assets/illustration-hero.svg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#card-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#card-text h1 {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+}
+
+#card-text p {
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    width: 85%;
+}
+
+
+#icon {
+    padding: 5px;
+}
+
+#plan {
+    width: 90%;
+
+    /* padding-left: 15px; */
+    display: flex;
+    border-radius: 15px;
+    flex-direction: row;
+    background-color: rgba(249, 240, 240, 0.975);
+    justify-content: space-around;
+    align-items: center;
+}
+
+#plantext h2 {
+    font-size: 16px;
+}
+
+#plantext p {
+    font-size: 16px;
+    color: grey;
+}
+
+
+#planoption a {
+    font-weight: 600;
+    color: hsl(245, 75%, 52%);
+    transition: 0.5s;
+}
+#planoption a:hover {
+    color: rgb(121, 72, 255);
+}
+
+
+#plainwrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+#btnsec {
+    display: flex;
+    flex-direction: column;
+}
+
+#mainbtn {
+    padding: 15px;
+    margin: 20px 20px 10px 20px;
+    border-radius: 15px;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 15px 25px rgba(195, 191, 203, 0.9);
+    color: white;
+    font-weight: 700;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+
+
+#mainbtn:hover{
+    background-color: hsl(266, 75%, 52%);
+}
+
+#cancelbtn {
+    padding: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: grey;
+    font-weight: 900;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+
+#cancelbtn:hover{
+    color: black;
+}
+
+@media(min-width:375px) {
+    body {
+        background-image: url("assets/pattern-background-mobile.svg");
+        background-size: 100% 45%;
+        overflow: hidden;
+    }
+}
