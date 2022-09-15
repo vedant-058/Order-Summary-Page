@@ -40,7 +40,7 @@ body {
 
 #card-image {
     grid-area: image;
-    background: url("assets/illustration-hero.svg");
+    background: url("illustration-hero.svg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: contain;
@@ -159,7 +159,7 @@ body {
 
 @media(min-width:375px) {
     body {
-        background-image: url("assets/pattern-background-mobile.svg");
+        background-image: url("pattern-background-mobile.svg");
         background-size: 100% 45%;
         overflow: hidden;
     }
